@@ -1,0 +1,57 @@
+
+<html>
+    <head><link rel="stylesheet" href="index.css"> 
+    <script src="index.js"></script> </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <menu class="kanban menu">
+        <div class="menu-title">Clear Tax Board</div>
+        <div id="menu" class="assignees">Members: </div>
+    </menu> 
+    <div class="kanban__title">
+        <h2> Task Board</h2></div>
+    <div class="dd">
+
+        <ol class="kanban To-do" id="to-do">
+            <h2>To do</h2>
+            <div class="actions">
+            <button class="addbutt" id="addNew"><i class="fa fa-plus"></i> Add new</button>
+            </div>
+        </ol>
+        <ol class="kanban progress" id="in-progress">
+            <h2> In progress</h2>
+            <div class="actions">
+                <button class="addbutt" id="addNewP"><i class="fa fa-plus"></i> Add new</button>
+            </div>
+        </ol>
+        <ol class="kanban  Done" id="done">
+            <h2> Done</h2>
+            <div class="actions">
+            <button class="addbutt" id="addNewD"><i class="fa fa-plus"></i> Add new</button>
+            </div>
+        </ol>
+
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3 id="add-label">Add an item</h3>
+            Description: <input type="text" placeholder="Description" id="description"/>
+            Due Date: <input type="date" placeholder="Due Date" id="dueDate"/>
+            Assignee: <select id="assignee">
+                <option value="Nikita" selected>Nikita</option>
+                <option value="James">James</option>
+                <option value="Jamie">Jamie</option>
+            </select>
+            Assignee: <select id="state">
+                <option value="to-do">To Do</option>
+                <option value="in-progress">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+            <button id="add">Ok</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+
+</body>
+</html>
